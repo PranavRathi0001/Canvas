@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas with Editing Tools</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button id="undo">Undo</button>
+      <button id="redo">Redo</button>
+    </div>
+    <div class="canvas-container">
+      <div id="canvas-area" class="canvas-area"></div>
+    </div>
+    <div class="toolbar">
+      <button id="addText">Add Text</button>
+      <button id="bold">B</button>
+      <button id="italic">I</button>
+      <button id="underline">U</button>
+      <button id="clearCanvas">Clear Canvas</button>
+      <select id="fontSize">
+        <option value="16px">16px</option>
+        <option value="18px">18px</option>
+        <option value="20px">20px</option>
+        <option value="24px">24px</option>
+        <option value="28px">28px</option>
+      </select>
+      <select id="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+      </select>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
